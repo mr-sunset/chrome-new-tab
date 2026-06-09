@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <p aria-label="Search">
+            <span id="s">S</span>
+            <span id="e">e</span>
+            <span id="a">a</span>
+            <span id="r">r</span>
+            <span id="c">c</span>
+            <span id="h">h</span>
+        </p>
+
+        <nav>
+            <a href="https://youtube.com/" target="_self" rel="noopener noreferrer">
+                <img src="icons/youtube.png" alt="YouTube" height="32px">
+            </a>
+
+            <a href="https://mail.google.com/" target="_self" rel="noopener noreferrer">
+                <img src="icons/gmail.png" alt="Gmail" height="30px">
+            </a>
+
+            <a href="https://gemini.google.com/" target="_self" rel="noopener noreferrer">
+                <img src="icons/gemini.png" alt="Gemini" height="25px">
+            </a>
+        </nav>
+
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" id="query" placeholder="Search" autocomplete="off">
+        </form>
+    </body>
+</html>
