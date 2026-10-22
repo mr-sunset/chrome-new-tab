@@ -1,22 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 95vh;
+    height: 100vh;
     margin: 0;
-}
-
-span {
-    font-family: "Google Sans", Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 64px;
-    letter-spacing: -2px;
 }
 
 p {
     margin: 0;
+}
+
+.letter {
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 64px;
+    letter-spacing: -2px;
+    cursor: default;
+    margin-bottom: 16px;
+}
+
+img {
+    margin: 0 5px;
+    height: 30px;
+}
+
+#youtube {
+    height: 23px;
 }
 
 #s { color: #4ea6ff; }
@@ -26,21 +39,25 @@ p {
 #c { color: #00a800; }
 #h { color: #ff3030; }
 
-input[type="text"] {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border-radius: 100px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-    border: none;
+#query {
     text-align: left;
-    width: 412px;
-    margin: 12px;
+
+    padding: 12px 24px;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100px;
+
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+
+    width: 300px;
+    max-width: 80vw;
+    margin: 16px;
+
+    font-family: "Google Sans", Arial, Helvetica, sans-serif;
 }
 
-input:focus {
-    outline: 1px solids black;
+#query:focus {
+    outline: 1px solid black;
 }
 
 nav {
@@ -68,21 +85,17 @@ a:active {
         background-color: rgb(19, 19, 19);
         color: white;
     }
-    
-    #s, #e, #a, #r, #c, #h {
-        color: rgba(255, 255, 255, 0.1);
-    }
 
-    input[type="text"] {
-        background-color: rgba(255, 255, 255, 0.1);
+    #query::placeholder {
         color: white;
     }
 
-    input[type="text"]:focus {
-        outline: 1px solids white;
+    #query {
+        background-color: rgb(80, 80, 80);
+        color: white;
     }
 
-    img {
-        filter: grayscale(100%);
+    #query:focus {
+        outline: 1px solid white;
     }
 }
